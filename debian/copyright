@@ -1,0 +1,40 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Digest-CRC
+Upstream-Contact: Oliver Maul <oli@42.nu>
+Source: https://metacpan.org/release/Digest-CRC
+
+Files: *
+Copyright: None (public domain)
+License: other
+ CRC algorithm code taken from "A PAINLESS GUIDE TO CRC ERROR DETECTION
+ ALGORITHMS".
+ .
+ The author of this package disclaims all copyrights and releases it
+ into the public domain.
+
+Files: debian/*
+Copyright:
+ 2004, Allard Hoeve <allard@byte.nl>
+ 2006, Gunnar Wolf <gwolf@debian.org>
+ 2007-2011, gregor herrmann <gregoa@debian.org>
+ 2008, Damyan Ivanov <dmn@debian.org>
+ 2008, Joachim Breitner <nomeata@debian.org>
+ 2010, Ansgar Burchardt <ansgar@debian.org>
+ 2014-2021, Florian Schlichting <fsfs@debian.org>
+License: Artistic or GPL-1+
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in `/usr/share/common-licenses/Artistic'.
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-1'.

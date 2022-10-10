@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+ifeq (64,$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS))
+	HAVE_64_BITS=1
+endif
+
+%:
+	dh $@
+
+override_dh_auto_test:
+	WITH_CRC64=$(HAVE_64_BITS) dh_auto_test

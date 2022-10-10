@@ -1,0 +1,29 @@
+Source: libdigest-crc-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Allard Hoeve <allard@byte.nl>,
+           gregor herrmann <gregoa@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libdigest-crc-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libdigest-crc-perl.git
+Homepage: https://metacpan.org/release/Digest-CRC
+Rules-Requires-Root: no
+
+Package: libdigest-crc-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl module providing generic CRC functions
+ The Digest::CRC module calculates CRC sums of all sorts.
+ It contains wrapper functions with the correct parameters for CRC-CCITT,
+ CRC-16, CRC-32 and CRC-64. The module acts similar to libstring-crc32-perl,
+ but implements the Digest interface.
